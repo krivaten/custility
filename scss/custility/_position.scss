@@ -1,0 +1,18 @@
+// Position
+
+@if $include-responsive-position == true {
+  @each $param in $position-params {
+    $name: nth($param, 1);
+    $width: nth($param, 2);
+
+    @if $width == 0 {
+      @include position-maker($name);
+    } @else {
+      @media(min-width: $width) {
+        @include position-maker($name);
+      }
+    }
+  }
+} @else {
+  @include position-maker(null);
+}

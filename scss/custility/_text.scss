@@ -1,0 +1,18 @@
+// Text
+
+@if $include-responsive-text == true {
+  @each $param in $text-params {
+    $name: nth($param, 1);
+    $width: nth($param, 2);
+
+    @if $width == 0 {
+      @include text-maker($name);
+    } @else {
+      @media(min-width: $width) {
+        @include text-maker($name);
+      }
+    }
+  }
+} @else {
+  @include text-maker(null);
+}

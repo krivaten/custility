@@ -1,0 +1,18 @@
+// Display
+
+@if $include-responsive-display == true {
+  @each $param in $display-params {
+    $name: nth($param, 1);
+    $width: nth($param, 2);
+
+    @if $width == 0 {
+      @include display-maker($name);
+    } @else {
+      @media(min-width: $width) {
+        @include display-maker($name);
+      }
+    }
+  }
+} @else {
+  @include display-maker(null);
+}

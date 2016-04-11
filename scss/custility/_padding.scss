@@ -1,0 +1,8 @@
+// Padding
+
+@each $param in $padding-params {
+  $name: nth($param, 1);
+  $space: nth($param, 2);
+
+  @include padding-maker($name, $space);
+}

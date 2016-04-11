@@ -1,0 +1,89 @@
+$screen-xs: 0 !default;
+$screen-sm: 544px !default;
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1200px !default;
+$base-space: 1em !default; // 16px
+
+// Button Settings
+$include-buttons: true !default;
+
+// Grid settings
+$include-grid: true !default;
+$include-offset-columns: true !default;
+$include-responsive-grid: true !default;
+$grid-columns: 12 !default;
+$grid-gutter: 30px !default;
+$screen-params: (
+  xs: $screen-xs,
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl
+) !default;
+
+// Margin Settings
+$include-margin: true !default;
+$margin-params: (
+  0: 0,
+  xs: $base-space,
+  sm: ($base-space * 2),
+  md: ($base-space * 3),
+  lg: ($base-space * 4),
+  xl: ($base-space * 5)
+) !default;
+
+// Padding Settings
+$include-padding: true !default;
+$padding-params: (
+  0: 0,
+  xs: $base-space,
+  sm: ($base-space * 2),
+  md: ($base-space * 3),
+  lg: ($base-space * 4),
+  xl: ($base-space * 5)
+) !default;
+
+// Color Setting
+$include-color: true !default;
+$color-params: (
+  red: #F44336,
+  orange: #FF9800,
+  yellow: #FFEB3B,
+  green: #4CAF50,
+  blue: #2196F3,
+  purple: #9C27B0,
+  grey: #607D8B
+) !default;
+$color-variant-params: (
+  50: 50%,
+  100: 20%,
+  300: 10%,
+  400: 5%,
+  500: 0,
+  600: -5%,
+  700: -10%,
+  800: -15%,
+  900: -20%
+) !default;
+
+// Text Settings
+$include-text: true !default;
+$include-responsive-text: true !default;
+$text-params: $screen-params !default;
+
+// Display Settings
+$include-display: true !default;
+$include-responsive-display: true !default;
+$display-params: $screen-params !default;
+
+// Position Settings
+$include-position: true !default;
+$include-responsive-position: true !default;
+$position-params: $screen-params !default;
+
+// List Settings
+$include-lists: true !default;
+
+// Form Settings
+$include-forms: true !default;

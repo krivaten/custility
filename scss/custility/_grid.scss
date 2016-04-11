@@ -1,0 +1,53 @@
+// Grid
+
+.#{$row-alias} {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+
+  position: relative;
+  margin-right: ($grid-gutter / -2);
+  margin-left: ($grid-gutter / -2);
+
+  &:not(.#{$row-alias}--flush) {
+    > [class*='#{$column-alias}--'] {
+      padding-right: ($grid-gutter / 2);
+      padding-left: ($grid-gutter / 2);
+    }
+  }
+}
+
+.#{$row-alias}--#{$stretch-alias} {
+  align-items: stretch;
+}
+
+.#{$row-alias}--#{$flush-alias} {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.#{$row-alias}--#{$column-alias} {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+@if $include-responsive-grid == false {
+  @each $param in $screen-params {
+    $name: nth($param, 1);
+    $width: nth($param, 2);
+
+    @if $width == 0 {
+      @include row-maker($name);
+      @include column-maker($name);
+    } @else {
+      @media(min-width: $width) {
+        @include row-maker($name);
+        @include column-maker($name);
+      }
+    }
+  }
+} @else {
+  @include row-maker(null);
+  @include column-maker(null);
+}

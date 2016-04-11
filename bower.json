@@ -1,0 +1,28 @@
+{
+  "name": "custility",
+  "authors": [
+    "Kris Van Houten <kris.vanhouten@crakn.net>"
+  ],
+  "description": "A customizable library of powerful SASS utilities",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "utility",
+    "grid",
+    "tools",
+    "styles"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
