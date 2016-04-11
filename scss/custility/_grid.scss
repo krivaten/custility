@@ -1,11 +1,10 @@
 // Grid
 
 .#{$row-alias} {
-  @include clearfix();
-  
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 auto;
+
   position: relative;
   margin-right: ($grid-gutter / -2);
   margin-left: ($grid-gutter / -2);
@@ -33,7 +32,7 @@
   flex: 1 1 auto;
 }
 
-@if $include-responsive-grid == true {
+@if $include-responsive-grid == false {
   @each $param in $screen-params {
     $name: nth($param, 1);
     $width: nth($param, 2);

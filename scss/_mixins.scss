@@ -1,3 +1,9 @@
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @mixin clearfix {
   &:before,
   &:after {
@@ -60,49 +66,48 @@
 // Makes a collection of row classes
 @mixin row-maker($size) {
   $responsive-separator: if($size, #{$size}--, null);
-  $class-prefix: #{$row-alias}--#{$responsive-separator};
 
-  &.#{$class-prefix}#{$wrap-alias} {
+  &.#{$row-alias}--#{$size}--#{$wrap-alias} {
     flex-wrap: wrap;
   }
 
-  &.#{$class-prefix}#{$nowrap-alias} {
+  &.#{$row-alias}--#{$size}--#{$nowrap-alias} {
     flex-wrap: nowrap;
   }
 
-  &.#{$class-prefix}#{$column-alias} {
+  &.#{$row-alias}--#{$size}--#{$column-alias} {
     flex-direction: column;
   }
 
-  &.#{$class-prefix}#{$row-alias} {
+  &.#{$row-alias}--#{$size}--#{$row-alias} {
     flex-direction: row;
   }
 
-  &.#{$class-prefix}#{$align-alias}--#{$flex-start-alias} {
+  &.#{$row-alias}--#{$size}--#{$align-alias}--#{$flex-start-alias} {
     align-items: flex-start;
   }
 
-  &.#{$class-prefix}#{$align-alias}--#{$flex-end-alias} {
+  &.#{$row-alias}--#{$size}--#{$align-alias}--#{$flex-end-alias} {
     align-items: flex-end;
   }
 
-  &.#{$class-prefix}#{$align-alias}--#{$center-alias} {
+  &.#{$row-alias}--#{$size}--#{$align-alias}--#{$center-alias} {
     align-items: center;
   }
 
-  &.#{$class-prefix}#{$justify-alias}--#{$space-between-alias} {
+  &.#{$row-alias}--#{$size}--#{$justify-alias}--#{$space-between-alias} {
     justify-content: space-between;
   }
 
-  &.#{$class-prefix}#{$justify-alias}--#{$center-alias} {
+  &.#{$row-alias}--#{$size}--#{$justify-alias}--#{$center-alias} {
     justify-content: center;
   }
 
-  &.#{$class-prefix}#{$justify-alias}--#{$flex-start-alias} {
+  &.#{$row-alias}--#{$size}--#{$justify-alias}--#{$flex-start-alias} {
     justify-content: flex-start;
   }
 
-  &.#{$class-prefix}#{$justify-alias}--#{$flex-end-alias} {
+  &.#{$row-alias}--#{$size}--#{$justify-alias}--#{$flex-end-alias} {
     justify-content: flex-end;
   }
 }
@@ -278,9 +283,7 @@
   }
 
   .#{$class-prefix}#{$ellipsis-alias} {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    @include ellipsis();
   }
 
   .#{$class-prefix}#{$left-alias} {
