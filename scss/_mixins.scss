@@ -1,7 +1,8 @@
 @mixin ellipsis {
   overflow: hidden;
-  text-overflow: ellipsis;
+
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @mixin clearfix {
@@ -30,7 +31,6 @@
   @each $param in $color-variant-params {
     $alias: nth($param, 1);
     $lightness: nth($param, 2);
-
     $adjusted-color: adjust-color($color, $lightness: $lightness);
 
     @if $adjusted-color != white and $adjusted-color != black {
@@ -130,11 +130,11 @@
   }
 
   .#{$class-prefix}#{$align-alias} {
-    flex: 0 0 auto;
-
     width: auto;
 
     white-space: nowrap;
+
+    flex: 0 0 auto;
   }
 
   .#{$class-prefix}#{$align-alias}--#{$center-alias} {
@@ -269,8 +269,8 @@
   }
 
   .#{$class-prefix}#{$bottom-alias}#{$right-alias} {
-    bottom: 0;
     right: 0;
+    bottom: 0;
   }
 
   .#{$class-prefix}#{$bottom-alias}#{$left-alias} {

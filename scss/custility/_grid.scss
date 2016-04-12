@@ -1,13 +1,15 @@
 // Grid
 
 .#{$row-alias} {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
-
   position: relative;
+
+  display: flex;
+
   margin-right: ($grid-gutter / -2);
   margin-left: ($grid-gutter / -2);
+
+  flex: 1 1 auto;
+  flex-wrap: wrap;
 
   &:not(.#{$row-alias}--flush) {
     > [class*='#{$column-alias}--'] {
@@ -29,6 +31,7 @@
 .#{$row-alias}--#{$column-alias} {
   display: flex;
   flex-direction: column;
+
   flex: 1 1 auto;
 }
 
