@@ -992,6 +992,36 @@
     top: 0;
     left: 0; } }
 
+.pull--xs--left {
+  float: left; }
+
+.pull--xs--right {
+  float: right; }
+
+@media (min-width: 544px) {
+  .pull--sm--left {
+    float: left; }
+  .pull--sm--right {
+    float: right; } }
+
+@media (min-width: 768px) {
+  .pull--md--left {
+    float: left; }
+  .pull--md--right {
+    float: right; } }
+
+@media (min-width: 992px) {
+  .pull--lg--left {
+    float: left; }
+  .pull--lg--right {
+    float: right; } }
+
+@media (min-width: 1200px) {
+  .pull--xl--left {
+    float: left; }
+  .pull--xl--right {
+    float: right; } }
+
 .txt--xs--str {
   font-weight: bold; }
 
