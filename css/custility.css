@@ -442,12 +442,12 @@
     display: none; } }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
   position: relative;
+  display: flex;
   margin-right: -15px;
-  margin-left: -15px; }
+  margin-left: -15px;
+  flex: 1 1 auto;
+  flex-wrap: wrap; }
   .row:not(.row--flush) > [class*='col--'] {
     padding-right: 15px;
     padding-left: 15px; }
@@ -570,9 +570,9 @@
   margin-left: 100%; }
 
 .col--a {
-  flex: 0 0 auto;
   width: auto;
-  white-space: nowrap; }
+  white-space: nowrap;
+  flex: 0 0 auto; }
 
 .col--a--c {
   align-self: center; }
@@ -885,8 +885,8 @@
   right: 0; }
 
 .pos--xs--br {
-  bottom: 0;
-  right: 0; }
+  right: 0;
+  bottom: 0; }
 
 .pos--xs--bl {
   bottom: 0;
@@ -911,8 +911,8 @@
     top: 0;
     right: 0; }
   .pos--sm--br {
-    bottom: 0;
-    right: 0; }
+    right: 0;
+    bottom: 0; }
   .pos--sm--bl {
     bottom: 0;
     left: 0; }
@@ -935,8 +935,8 @@
     top: 0;
     right: 0; }
   .pos--md--br {
-    bottom: 0;
-    right: 0; }
+    right: 0;
+    bottom: 0; }
   .pos--md--bl {
     bottom: 0;
     left: 0; }
@@ -959,8 +959,8 @@
     top: 0;
     right: 0; }
   .pos--lg--br {
-    bottom: 0;
-    right: 0; }
+    right: 0;
+    bottom: 0; }
   .pos--lg--bl {
     bottom: 0;
     left: 0; }
@@ -983,8 +983,8 @@
     top: 0;
     right: 0; }
   .pos--xl--br {
-    bottom: 0;
-    right: 0; }
+    right: 0;
+    bottom: 0; }
   .pos--xl--bl {
     bottom: 0;
     left: 0; }
@@ -1030,8 +1030,8 @@
 
 .txt--xs--eli {
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 
 .txt--xs--l {
   text-align: left; }
@@ -1049,8 +1049,8 @@
     font-style: italic; }
   .txt--sm--eli {
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    text-overflow: ellipsis; }
   .txt--sm--l {
     text-align: left; }
   .txt--sm--c {
@@ -1065,8 +1065,8 @@
     font-style: italic; }
   .txt--md--eli {
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    text-overflow: ellipsis; }
   .txt--md--l {
     text-align: left; }
   .txt--md--c {
@@ -1081,8 +1081,8 @@
     font-style: italic; }
   .txt--lg--eli {
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    text-overflow: ellipsis; }
   .txt--lg--l {
     text-align: left; }
   .txt--lg--c {
@@ -1097,8 +1097,8 @@
     font-style: italic; }
   .txt--xl--eli {
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    white-space: nowrap;
+    text-overflow: ellipsis; }
   .txt--xl--l {
     text-align: left; }
   .txt--xl--c {
