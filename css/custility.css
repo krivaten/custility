@@ -452,7 +452,7 @@
     padding-right: 15px;
     padding-left: 15px; }
 
-.row--stretch {
+.row--str {
   align-items: stretch; }
 
 .row--flush {
@@ -464,37 +464,37 @@
   flex-direction: column;
   flex: 1 1 auto; }
 
-.row----wrap {
+.row--w {
   flex-wrap: wrap; }
 
-.row----nowrap {
+.row--nw {
   flex-wrap: nowrap; }
 
-.row----col {
+.row--col {
   flex-direction: column; }
 
-.row----row {
+.row--row {
   flex-direction: row; }
 
-.row----a--fs {
+.row--a--fs {
   align-items: flex-start; }
 
-.row----a--fe {
+.row--a--fe {
   align-items: flex-end; }
 
-.row----a--c {
+.row--a--c {
   align-items: center; }
 
-.row----j--sb {
+.row--j--sb {
   justify-content: space-between; }
 
-.row----j--c {
+.row--j--c {
   justify-content: center; }
 
-.row----j--fs {
+.row--j--fs {
   justify-content: flex-start; }
 
-.row----j--fe {
+.row--j--fe {
   justify-content: flex-end; }
 
 .col--1 {
