@@ -2,6 +2,7 @@
 
 .#{$row-alias} {
   @include clearfix();
+
   position: relative;
 
   display: flex;
