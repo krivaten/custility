@@ -1,8 +1,0 @@
-// Color
-
-@each $param in $color-params {
-  $name: nth($param, 1);
-  $color: nth($param, 2);
-
-  @include color-maker($name, $color);
-}

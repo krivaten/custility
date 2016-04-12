@@ -46,29 +46,6 @@ $include-pull: true !default;
 $include-responsive-pull: true !default;
 $pull-params: $screen-params !default;
 
-// Color Setting
-$include-color: true !default;
-$color-params: (
-  red: #F44336,
-  orange: #FF9800,
-  yellow: #FFEB3B,
-  green: #4CAF50,
-  blue: #2196F3,
-  purple: #9C27B0,
-  grey: #607D8B
-) !default;
-$color-variant-params: (
-  50: 50%,
-  100: 20%,
-  300: 10%,
-  400: 5%,
-  500: 0,
-  600: -5%,
-  700: -10%,
-  800: -15%,
-  900: -20%
-) !default;
-
 // Text Settings
 $include-text: true !default;
 $include-responsive-text: true !default;

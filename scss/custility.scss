@@ -2,9 +2,6 @@
 @import 'variables';
 @import 'mixins';
 
-@if $include-color == true {
-  @import 'base/color';
-}
 @if $include-display == true {
   @import 'base/display';
 }
