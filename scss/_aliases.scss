@@ -1,8 +1,5 @@
 // Aliases
 
-// Buttons
-$button-alias: btn !default;
-
 // Positions
 $position-alias: pos !default;
 $absolute-alias: abs !default;
@@ -22,13 +19,12 @@ $flex-start-alias: fs !default;
 $space-between-alias: sb !default;
 $align-alias: a !default;
 $justify-alias: j !default;
-$background-alias: bg !default;
 $flush-alias: flush !default;
 $first-alias: first !default;
 $last-alias: last !default;
-$wrap-alias: wrap !default;
-$nowrap-alias: nowrap !default;
-$stretch-alias: stretch !default;
+$wrap-alias: w !default;
+$nowrap-alias: nw !default;
+$stretch-alias: str !default;
 
 //Display
 $display-alias: dsp !default;
@@ -43,9 +39,8 @@ $italic-alias: emp !default;
 $ellipsis-alias: eli !default;
 
 // Misc
+$background-alias: bg !default;
 $offset-alias: o !default;
 $margin-alias: mar !default;
 $padding-alias: pad !default;
-$list-alias: lst !default;
 $pull-alias: pull !default;
-$form-alias: frm !default;

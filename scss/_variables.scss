@@ -5,9 +5,6 @@ $screen-lg: 992px !default;
 $screen-xl: 1200px !default;
 $base-space: 1em !default; // 16px
 
-// Button Settings
-$include-buttons: true !default;
-
 // Grid settings
 $include-grid: true !default;
 $include-offset-columns: true !default;
@@ -86,9 +83,3 @@ $display-params: $screen-params !default;
 $include-position: true !default;
 $include-responsive-position: true !default;
 $position-params: $screen-params !default;
-
-// List Settings
-$include-lists: true !default;
-
-// Form Settings
-$include-forms: true !default;
