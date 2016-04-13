@@ -2,9 +2,11 @@
   "name": "custility",
   "version": "0.2.0",
   "description": "A customizable library of powerful SASS utilities",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "scss/custility.scss",
+  "author": "Kris Van Houten",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krivaten/custility"
   },
   "keywords": [
     "sass",
@@ -15,7 +17,6 @@
     "tools",
     "styles"
   ],
-  "author": "Kris Van Houten",
   "license": "MIT",
   "devDependencies": {
     "csscomb": "^3.1.8",
