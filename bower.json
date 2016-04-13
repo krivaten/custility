@@ -1,11 +1,15 @@
 {
   "name": "custility",
-  "authors": [
-    "Kris Van Houten <kris.vanhouten@crakn.net>"
-  ],
+  "version": "0.2.0",
   "description": "A customizable library of powerful SASS utilities",
-  "main": "",
-  "moduleType": [],
+  "main": "scss/custility.scss",
+  "authors": [
+    "Kris Van Houten <krivaten@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krivaten/custility"
+  },
   "keywords": [
     "sass",
     "scss",
