@@ -1,6 +1,5 @@
 {
   "name": "custility",
-  "version": "0.2.0",
   "description": "A customizable library of powerful SASS utilities",
   "main": "scss/custility.scss",
   "authors": [
