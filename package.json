@@ -1,6 +1,6 @@
 {
   "name": "custility",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A customizable library of powerful SASS utilities",
   "main": "scss/custility.scss",
   "author": "Kris Van Houten",
