@@ -34,6 +34,20 @@
   .#{$class-prefix}#{$none-alias} {
     display: none;
   }
+
+  .#{$class-prefix}#{$space-between-alias},
+  .#{$class-prefix}#{$space-around-alias} {
+    display: flex;
+    width: 100%;
+  }
+
+  .#{$class-prefix}#{$space-between-alias} {
+    justify-content: space-between;
+  }
+
+  .#{$class-prefix}#{$space-around-alias} {
+    justify-content: space-around;
+  }
 }
 
 // Makes a collection of row classes
