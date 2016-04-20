@@ -1,0 +1,66 @@
+/**
+ * Colors
+ */
+$green: #64b6a2;
+$light-green: #7ed0cb;
+$black: #46433a;
+$white: #f9f9f9;
+$gray: #676e73;
+$light-gray: #cfcfcf;
+$light-blue: #e6edf2;
+
+/**
+ * Typography
+ */
+$serif-font-family: 'adobe-caslon-pro', serif;
+$sans-serif-font-family: 'proxima-nova', sans-serif;
+
+/**
+ * Font Sizes
+ */
+$base-font-size: 1.25em;
+$base-line-height: 1.5em;
+
+/**
+ * Header
+ */
+$header-xs-height: 45px;
+$header-sm-height: 60px;
+$header-nav-link-padding: 5px;
+$header-nav-link-color: $black;
+$header-logo-padding: 5px;
+
+/**
+ * Lists
+ */
+$list-post-li-margin: 50px;
+
+/**
+ * Other Sizes
+ */
+$base-border-radius: 3px;
+$base-spacing: 1.5 * 1em;
+$sm-spacing: $base-spacing / 2;
+$base-z-index: 0;
+$base-padding: 16px;
+
+/**
+ * Font Colors
+ */
+$base-background-color: #fff;
+$base-font-color: $black;
+$action-color: $green;
+
+/**
+ * Border
+ */
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+/**
+ * Breadkpoints
+ */
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
