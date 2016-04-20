@@ -9,7 +9,6 @@
 /bower_components
 
 # misc
-/.sass-cache
 /.git
 /connect.lock
 /coverage/*
@@ -17,7 +16,9 @@
 /scss/debugging.scss
 /css/debugging.css
 /css/debugging.min.css
-index.html
+_site
+.sass-cache
+.jekyll-metadata
 npm-debug.log
 testem.log
 *.sh
