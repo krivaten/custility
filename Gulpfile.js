@@ -11,6 +11,7 @@ gulp.task('styles', function() {
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./css/'))
+    .pipe(gulp.dest('./docs/css/'))
     .pipe(connect.reload());
 });
 
