@@ -5,12 +5,10 @@ main {
 }
 
 body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-color;
   display: flex;
-}
-
-header,
-section {
-  width: 50%;
 }
 
 header {
@@ -18,12 +16,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 38.1666%;
 
-  img {
-    max-height: 400px;
+  a {
+    max-width: 61.8334%;
   }
 }
 
+section {
+  overflow-y: scroll;
+  width: 61.8334%;
+}
+
 article {
-  padding: 64px;
+  padding: 48px;
+  overflow: scroll;
 }
