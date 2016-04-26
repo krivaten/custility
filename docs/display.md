@@ -20,7 +20,7 @@ The actions are the values you can append to the end of the _display_ prefixes (
 
 - `none`: Hides the element
 - `blk`: Displays the element as a block
-- `inline`: Displays the element as inline
+- `inl`: Displays the element as inline
 - `inl-blk`: Displays the element as an inline-block
 - `sb`: Displays the element using flexbox and `space-between`
 - `sa`: Displays the element using flexbox and `space-around`
