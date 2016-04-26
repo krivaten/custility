@@ -50,8 +50,8 @@ The following are the variables that are used, along with their default values, 
 
   // Display Aliases
   $display-alias: dsp;
-  $block-alias: block;
-  $inline-alias: inline-block;
+  $block-alias: blk;
+  $inline-alias: inl;
   $none-alias: none;
   $space-between-alias: sb;
   $space-around-alias: sa;
