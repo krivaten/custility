@@ -31,6 +31,10 @@
     display: inline-block;
   }
 
+  .#{$class-prefix}#{$inline-alias}-#{$block-alias} {
+    display: inline-block;
+  }
+
   .#{$class-prefix}#{$none-alias} {
     display: none;
   }
