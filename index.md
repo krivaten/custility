@@ -8,10 +8,10 @@ layout: default
 
 This isn't Bootstrap that, while a great tool, will make your website look just like millions of others. This tool set gives you more granular control over your structure and layout, while leaving the things that make your product _pretty_, up to you or another library. Here's some of the things that **Custility** offers:
 
-- [Display](/display.html)
+- [Display](custility/display.html)
 - Grid _(Coming Soon)_
 - Margin _(Coming Soon)_
-- Pading _(Coming Soon)_
+- Padding _(Coming Soon)_
 - Position _(Coming Soon)_
 - Pull _(Coming Soon)_
 - Text _(Coming Soon)_

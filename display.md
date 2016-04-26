@@ -19,8 +19,9 @@ By default, responsive breakpoint based class names are generated for you. If yo
 The actions are the values you can append to the end of the _display_ prefixes (i.e., `.dsp--xs--none`), to impact the visility and appearance of the element. Unless you edit the corresponding _alias_ variable values, your options will be named the following:
 
 - `none`: Hides the element
-- `block`: Displays the element as a block
-- `inline-block`: Displays the element as an inline-block
+- `blk`: Displays the element as a block
+- `inline`: Displays the element as inline
+- `inl-blk`: Displays the element as an inline-block
 - `sb`: Displays the element using flexbox and `space-between`
 - `sa`: Displays the element using flexbox and `space-around`
 
