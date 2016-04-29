@@ -28,7 +28,7 @@ The actions are the values you can append to the end of the _display_ prefixes (
 ### Examples
 
 {% highlight html %}
-  <div class="dsp--xs--none dsp--xl--block">
+  <div class="dsp--xs--none dsp--xl--blk">
     Will only be visible on screens 1200px wide and greater
   </div>
   <div class="dsp--xs--inline-block dsp--xl--none">
