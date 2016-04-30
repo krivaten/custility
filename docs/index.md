@@ -10,8 +10,8 @@ This isn't Bootstrap that, while a great tool, will make your website look just 
 
 - [Display](display.html)
 - Grid _(Coming Soon)_
-- Margin _(Coming Soon)_
-- Padding _(Coming Soon)_
+- [Margin](margin.html)
+- [Padding](padding.html)
 - Position _(Coming Soon)_
 - Pull _(Coming Soon)_
 - Text _(Coming Soon)_
