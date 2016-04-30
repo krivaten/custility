@@ -11,23 +11,55 @@ body {
   display: flex;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 header {
   background: #F3FAF8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38.1666%;
+  position: fixed;
+  top: 0;
+  height: 64px;
+  display: block;
+  width: 100%;
 
-  a {
-    max-width: 61.8334%;
+  img {
+    padding: 8px;
+    height: 48px;
+  }
+
+  @media (min-width: $screen-md) {
+    position: relative;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    width: 38.1666%;
+
+    a {
+      max-width: 61.8334%;
+    }
+
+    img {
+      padding: 0;
+      height: auto;
+    }
   }
 }
 
 section {
-  overflow-y: scroll;
-  width: 61.8334%;
+  overflow-x: hidden;
+  @media (min-width: $screen-md) {
+    overflow-y: scroll;
+    width: 61.8334%;
+  }
 }
 
 article {
-  padding: 48px;
+  margin: 80px 16px 16px;
+
+  @media (min-width: $screen-md) {
+    margin: 48px;
+  }
 }
