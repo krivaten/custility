@@ -11,6 +11,9 @@ pre {
   background: #f7f7f7;
   padding: 0.2em;
   border-radius: 3px;
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 pre {
