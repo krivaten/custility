@@ -288,6 +288,10 @@
   $responsive-separator: if($size, #{$size}--, null);
   $class-prefix: #{$text-alias}--#{$responsive-separator};
 
+  .#{$class-prefix}#{$small-alias} {
+    font-size: $small-size;
+  }
+
   .#{$class-prefix}#{$strong-alias} {
     font-weight: bold;
   }

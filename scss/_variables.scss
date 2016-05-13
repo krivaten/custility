@@ -50,6 +50,7 @@ $pull-params: $screen-params !default;
 $include-text: true !default;
 $include-responsive-text: true !default;
 $text-params: $screen-params !default;
+$small-size: 80% !default;
 
 // Display Settings
 $include-display: true !default;
