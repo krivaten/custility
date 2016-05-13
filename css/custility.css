@@ -1045,6 +1045,9 @@
   .pull--xl--r {
     float: right; } }
 
+.txt--xs--sm {
+  font-size: 80%; }
+
 .txt--xs--str {
   font-weight: bold; }
 
@@ -1066,6 +1069,8 @@
   text-align: right; }
 
 @media (min-width: 544px) {
+  .txt--sm--sm {
+    font-size: 80%; }
   .txt--sm--str {
     font-weight: bold; }
   .txt--sm--emp {
@@ -1082,6 +1087,8 @@
     text-align: right; } }
 
 @media (min-width: 768px) {
+  .txt--md--sm {
+    font-size: 80%; }
   .txt--md--str {
     font-weight: bold; }
   .txt--md--emp {
@@ -1098,6 +1105,8 @@
     text-align: right; } }
 
 @media (min-width: 992px) {
+  .txt--lg--sm {
+    font-size: 80%; }
   .txt--lg--str {
     font-weight: bold; }
   .txt--lg--emp {
@@ -1114,6 +1123,8 @@
     text-align: right; } }
 
 @media (min-width: 1200px) {
+  .txt--xl--sm {
+    font-size: 80%; }
   .txt--xl--str {
     font-weight: bold; }
   .txt--xl--emp {
