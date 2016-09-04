@@ -1,4 +1,37 @@
-// Margin
+/**
+ * MARGIN
+ */
+@mixin margin-maker($name, $size) {
+  .#{$margin-alias}#{$spacer}#{$name} {
+    margin: #{$size};
+  }
+
+  .#{$margin-alias}#{$spacer}#{$name}#{$spacer}#{$top-alias} {
+    margin-top: #{$size};
+  }
+
+  .#{$margin-alias}#{$spacer}#{$name}#{$spacer}#{$bottom-alias} {
+    margin-bottom: $size;
+  }
+
+  .#{$margin-alias}#{$spacer}#{$name}#{$spacer}#{$left-alias} {
+    margin-left: #{$size};
+  }
+
+  .#{$margin-alias}#{$spacer}#{$name}#{$spacer}#{$right-alias} {
+    margin-right: #{$size};
+  }
+
+  .#{$margin-alias}#{$spacer}#{$name}#{$spacer}#{$vertical-alias} {
+    margin-right: #{$size};
+    margin-left: #{$size};
+  }
+
+  .#{$margin-alias}#{$spacer}#{$name}#{$spacer}#{$horizontal-alias} {
+    margin-top: #{$size};
+    margin-bottom: #{$size};
+  }
+}
 
 @each $param in $margin-params {
   $name: nth($param, 1);

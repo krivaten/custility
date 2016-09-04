@@ -12,8 +12,8 @@ $light-blue: #e6edf2;
 /**
  * Typography
  */
-$serif-font-family: 'Droid Serif', serif;
-$sans-serif-font-family: 'Montserrat', sans-serif;
+$serif-font-family: 'Georgia', serif;
+$sans-serif-font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 
 /**
  * Font Sizes
@@ -59,10 +59,10 @@ $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
 /**
- * Breadkpoints
+ * Breakpoints
  */
- $screen-xs: 0;
- $screen-sm: 544px;
- $screen-md: 768px;
- $screen-lg: 992px;
- $screen-xl: 1200px;
+$screen-xs: 0;
+$screen-sm: 544px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;

@@ -1,7 +1,105 @@
-// Grid
+/**
+ * GRID
+ */
+@mixin row-maker($size) {
+  $responsive-separator: if($size, #{$size}#{$spacer}, null);
+  $class-prefix: #{$row-alias}#{$spacer}#{$responsive-separator};
+
+  &.#{$class-prefix}#{$wrap-alias} {
+    flex-wrap: wrap;
+  }
+
+  &.#{$class-prefix}#{$nowrap-alias} {
+    flex-wrap: nowrap;
+  }
+
+  &.#{$class-prefix}#{$column-alias} {
+    flex-direction: column;
+  }
+
+  &.#{$class-prefix}#{$row-alias} {
+    flex-direction: row;
+  }
+
+  &.#{$class-prefix}#{$align-alias}#{$spacer}#{$flex-start-alias} {
+    align-items: flex-start;
+  }
+
+  &.#{$class-prefix}#{$align-alias}#{$spacer}#{$flex-end-alias} {
+    align-items: flex-end;
+  }
+
+  &.#{$class-prefix}#{$align-alias}#{$spacer}#{$center-alias} {
+    align-items: center;
+  }
+
+  &.#{$class-prefix}#{$justify-alias}#{$spacer}#{$flex-start-alias} {
+    justify-content: flex-start;
+  }
+
+  &.#{$class-prefix}#{$justify-alias}#{$spacer}#{$flex-end-alias} {
+    justify-content: flex-end;
+  }
+
+  &.#{$class-prefix}#{$justify-alias}#{$spacer}#{$center-alias} {
+    justify-content: center;
+  }
+
+  &.#{$class-prefix}#{$justify-alias}#{$spacer}#{$space-between-alias} {
+    justify-content: space-between;
+  }
+
+  &.#{$class-prefix}#{$justify-alias}#{$spacer}#{$space-around-alias} {
+    justify-content: space-around;
+  }
+}
+
+// Makes a collection of column classes
+@mixin column-maker($size) {
+  $responsive-separator: if($size, #{$size}#{$spacer}, null);
+  $class-prefix: #{$column-alias}#{$spacer}#{$responsive-separator};
+
+  @for $i from 1 through $grid-columns {
+    .#{$class-prefix}#{$i} {
+      width: percentage($i / 12);
+    }
+    @if $include-offset-columns == true {
+      .#{$class-prefix}#{$offset-alias}#{$spacer}#{$i} {
+        margin-left: percentage($i / 12);
+      }
+    }
+  }
+
+  .#{$class-prefix}#{$align-alias} {
+    width: auto;
+
+    white-space: nowrap;
+
+    flex: 0 0 auto;
+  }
+
+  .#{$class-prefix}#{$align-alias}#{$spacer}#{$flex-start-alias} {
+    align-self: flex-start;
+  }
+
+  .#{$class-prefix}#{$align-alias}#{$spacer}#{$flex-end-alias} {
+    align-self: flex-end;
+  }
+
+  .#{$class-prefix}#{$align-alias}#{$spacer}#{$center-alias} {
+    align-self: center;
+  }
+
+  .#{$class-prefix}#{$first-alias} {
+    order: -1;
+  }
+
+  .#{$class-prefix}#{$last-alias} {
+    order: 1;
+  }
+}
 
 .#{$row-alias} {
-  @include clearfix();
 
   position: relative;
 
@@ -12,6 +110,17 @@
 
   flex: 1 1 auto;
   flex-wrap: wrap;
+
+  &:before,
+  &:after {
+      display: table;
+
+      content: '';
+  }
+
+  &:after {
+      clear: both;
+  }
 
   &:not(.#{$row-alias}--flush) {
     > [class*='#{$column-alias}--'] {

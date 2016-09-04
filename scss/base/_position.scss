@@ -1,4 +1,54 @@
-// Position
+/**
+ * POSITION
+ */
+@mixin position-maker($size) {
+  $responsive-separator: if($size, #{$size}#{$spacer}, null);
+  $class-prefix: #{$position-alias}#{$spacer}#{$responsive-separator};
+
+  .#{$class-prefix}#{$absolute-alias} {
+    position: absolute;
+  }
+
+  .#{$class-prefix}#{$relative-alias} {
+    position: relative;
+  }
+
+  .#{$class-prefix}#{$left-alias} {
+    left: 0;
+  }
+
+  .#{$class-prefix}#{$right-alias} {
+    right: 0;
+  }
+
+  .#{$class-prefix}#{$top-alias} {
+    top: 0;
+  }
+
+  .#{$class-prefix}#{$bottom-alias} {
+    bottom: 0;
+  }
+
+  .#{$class-prefix}#{$top-alias}#{$right-alias} {
+    top: 0;
+    right: 0;
+  }
+
+  .#{$class-prefix}#{$bottom-alias}#{$right-alias} {
+    right: 0;
+    bottom: 0;
+  }
+
+  .#{$class-prefix}#{$bottom-alias}#{$left-alias} {
+    bottom: 0;
+    left: 0;
+  }
+
+  .#{$class-prefix}#{$top-alias}#{$left-alias} {
+    top: 0;
+    left: 0;
+  }
+}
 
 @if $include-responsive-position == true {
   @each $param in $position-params {

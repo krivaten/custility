@@ -1,4 +1,37 @@
-// Padding
+/**
+ * PADDING
+ */
+@mixin padding-maker($name, $size) {
+  .#{$padding-alias}#{$spacer}#{$name} {
+    padding: #{$size};
+  }
+
+  .#{$padding-alias}#{$spacer}#{$name}#{$spacer}#{$top-alias} {
+    padding-top: #{$size};
+  }
+
+  .#{$padding-alias}#{$spacer}#{$name}#{$spacer}#{$bottom-alias} {
+    padding-bottom: $size;
+  }
+
+  .#{$padding-alias}#{$spacer}#{$name}#{$spacer}#{$left-alias} {
+    padding-left: #{$size};
+  }
+
+  .#{$padding-alias}#{$spacer}#{$name}#{$spacer}#{$right-alias} {
+    padding-right: #{$size};
+  }
+
+  .#{$padding-alias}#{$spacer}#{$name}#{$spacer}#{$horizontal-alias} {
+    padding-right: #{$size};
+    padding-left: #{$size};
+  }
+
+  .#{$padding-alias}#{$spacer}#{$name}#{$spacer}#{$vertical-alias} {
+    padding-top: #{$size};
+    padding-bottom: #{$size};
+  }
+}
 
 @each $param in $padding-params {
   $name: nth($param, 1);

@@ -1,0 +1,177 @@
+// COLORS
+$grey: #d1d1d1;
+
+// TYPOGRAPHY
+$font-size: 14px;
+$font-size--condensed: 13px;
+
+// SPACES
+$space-xs: 8px;
+$space-sm: 16px;
+$space-md: 24px;
+
+// STANDARD
+$list-item--min-height: ($space-md * 2);
+$list-item--line-height: $space-md;
+$list-item--padding-x: $space-sm;
+$list-item--padding-y: 0;
+$list-content--padding-x: 0;
+$list-content--padding-y: ($space-xs * 1.5);
+$list-avatar--background: $grey;
+$list-avatar--size: ($space-md + $space-sm);
+$list-avatar--font-size: $space-md;
+$list-avatar--margin-y: $space-xs;
+$list--font-size: 16px;
+$list--padding-y: $space-xs;
+$list--border: 1px solid #ececec;
+
+// CONDENSED
+$list-item--min-height--condensed: 40px;
+$list-item--line-height--condensed: ($space-sm * 1.25);
+$list-content--padding-y--condensed: ($space-xs * 1.25);
+$list-avatar--size--condensed: ($space-xs * 4.5);
+$list-avatar--margin-y--condensed: ($space-xs * 0.75);
+$list--font-size--condensed: 13px;
+$list--padding-y--condensed: ($space-xs / 2);
+
+.list {
+  list-style: none;
+  padding: $list--padding-y 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+
+  &--condensed {
+    padding: $list--padding-y--condensed 0;
+  }
+
+  // We do this so we can place .list__item on things like links within <li> tags
+  &--bordered li {
+    border-top: $list--border;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+}
+
+.list__item,
+.list__box {
+  display: flex;
+  align-items: center;
+}
+
+.list__item {
+  position: relative;
+  justify-content: space-between;
+  padding: $list-item--padding-y $list-item--padding-x;
+  font-size: $list--font-size;
+  line-height: $list-item--line-height;
+  min-height: $list-item--min-height;
+
+  .list--condensed & {
+    font-size: $list--font-size--condensed;
+    line-height: $list-item--line-height--condensed;
+    min-height: $list-item--min-height--condensed;
+  }
+
+  &--bordered {
+    border-top: $list--border;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  .list .list & {
+    margin-left: (-$list-item--padding-x);
+    margin-right: (-$list-item--padding-x);
+  }
+}
+
+.list__box {
+  width: 100%;
+
+  &--avatar-space {
+    margin-left: (72 - $list-item--padding-x);
+  }
+
+  &--bordered {
+    border-top: $list--border;
+  }
+}
+
+.list__avatar {
+  font-size: $list-avatar--font-size;
+  line-height: $list-avatar--size;
+  width: $list-avatar--size;
+  text-align: center;
+  align-self: flex-start;
+  height: $list-avatar--size;
+  margin-top: $list-avatar--margin-y;
+  margin-bottom: $list-avatar--margin-y;
+  background: $list-avatar--background;
+  border-radius: 50%;
+
+  &:first-child {
+    margin-right: 72 - ($list-avatar--size + $list-item--padding-x);
+  }
+
+  &:last-child {
+    margin-left: $list-item--padding-x;
+  }
+
+  .list--condensed & {
+    line-height: $list-avatar--size--condensed;
+    width: $list-avatar--size--condensed;
+    height: $list-avatar--size--condensed;
+    margin-top: $list-avatar--margin-y--condensed;
+    margin-bottom: $list-avatar--margin-y--condensed;
+  }
+}
+
+.list__content {
+  display: flex;
+  flex: 1 1;
+  flex-wrap: wrap;
+  padding: $list-content--padding-y $list-content--padding-x;
+
+  .list--condensed & {
+    padding: $list-content--padding-y--condensed 0;
+  }
+}
+
+.list__misc {
+  flex: 0 0 auto;
+  padding: $list-content--padding-y $list-content--padding-x;
+  margin-left: $space-sm;
+  align-self: flex-start;
+  color: $grey;
+}
+
+.list__title {
+  width: 100%;
+}
+
+.list__details {
+  width: 100%;
+  color: $grey;
+}
+
+// MISC
+html {
+  font-family: 'Roboto', sans-serif;
+  padding: $space-md;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

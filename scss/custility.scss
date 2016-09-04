@@ -1,25 +1,16 @@
+/**
+ * SETUP
+ */
 @import 'aliases';
 @import 'variables';
-@import 'mixins';
 
-@if $include-display == true {
-  @import 'base/display';
-}
-@if $include-grid == true {
-  @import 'base/grid';
-}
-@if $include-margin == true {
-  @import 'base/margin';
-}
-@if $include-padding == true {
-  @import 'base/padding';
-}
-@if $include-position == true {
-  @import 'base/position';
-}
-@if $include-pull == true {
-  @import 'base/pull';
-}
-@if $include-text == true {
-  @import 'base/text';
-}
+/**
+ * PLUGINS
+ */
+@import 'base/display';
+@import 'base/grid';
+@import 'base/margin';
+@import 'base/padding';
+@import 'base/position';
+@import 'base/pull';
+@import 'base/text';

@@ -1,4 +1,41 @@
-// Text
+/**
+ * TEXT
+ */
+@mixin text-maker($size) {
+  $responsive-separator: if($size, #{$size}#{$spacer}, null);
+  $class-prefix: #{$text-alias}#{$spacer}#{$responsive-separator};
+
+  .#{$class-prefix}#{$small-alias} {
+    font-size: $small-size;
+  }
+
+  .#{$class-prefix}#{$strong-alias} {
+    font-weight: bold;
+  }
+
+  .#{$class-prefix}#{$italic-alias} {
+    font-style: italic;
+  }
+
+  .#{$class-prefix}#{$ellipsis-alias} {
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .#{$class-prefix}#{$left-alias} {
+    text-align: left;
+  }
+
+  .#{$class-prefix}#{$center-alias} {
+    text-align: center;
+  }
+
+  .#{$class-prefix}#{$right-alias} {
+    text-align: right;
+  }
+}
 
 @if $include-responsive-text == true {
   @each $param in $text-params {

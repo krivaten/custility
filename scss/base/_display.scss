@@ -1,4 +1,40 @@
-// Display
+/**
+ * DISPLAY
+ */
+@mixin display-maker($size) {
+  $responsive-separator: if($size, #{$size}#{$spacer}, null);
+  $class-prefix: #{$display-alias}#{$spacer}#{$responsive-separator};
+
+  .#{$class-prefix}#{$block-alias} {
+    display: block;
+  }
+
+  .#{$class-prefix}#{$inline-alias} {
+    display: inline-block;
+  }
+
+  .#{$class-prefix}#{$inline-alias}-#{$block-alias} {
+    display: inline-block;
+  }
+
+  .#{$class-prefix}#{$none-alias} {
+    display: none;
+  }
+
+  .#{$class-prefix}#{$space-between-alias},
+  .#{$class-prefix}#{$space-around-alias} {
+    display: flex;
+    width: 100%;
+  }
+
+  .#{$class-prefix}#{$space-between-alias} {
+    justify-content: space-between;
+  }
+
+  .#{$class-prefix}#{$space-around-alias} {
+    justify-content: space-around;
+  }
+}
 
 @if $include-responsive-display == true {
   @each $param in $display-params {
