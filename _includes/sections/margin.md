@@ -1,8 +1,7 @@
----
-layout: default
----
 
 ## Margin
+
+[(back to top)](#top)
 
 Within **Custility**, you can have consistent control over the margin you add to elements.
 
@@ -30,13 +29,13 @@ The _suffixes_ that can be added to the margin class give you a lot of flexibili
 
 {% highlight html %}
   <div class="mar--x--y mar--xl--x">
-    Will have no margin on the y-axis but 80px margin on the x-axis
+    Will have no margin on the y-axis but xl margin on the x-axis
   </div>
   <div class="mar--xs--t mar--md--r">
-    Will have 16px margin on the top and 32px margin on the right
+    Will have 16px margin on the top and md margin on the right
   </div>
   <div class="mar--lg--b">
-    Will have 64px margin on the bottom
+    Will have lg margin on the bottom
   </div>
 {% endhighlight %}
 

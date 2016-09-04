@@ -1,10 +1,9 @@
----
-layout: default
----
 
 ## Padding
 
-Within **Custility**, you can have consistent control over the padding you add to elements.
+[(back to top)](#top)
+
+These utilities allow you to control the _padding_ of elements, and are very simple to use.
 
 ### Prefixes
 By default, there are six padding prefixes that determine the size of the padding to be added. While the names and sizes can be changed by overriding the `$padding-params` variable, out of the box they are the the following:
@@ -16,8 +15,8 @@ By default, there are six padding prefixes that determine the size of the paddin
 - `.pad--lg--`: Adds a padding of **64px**
 - `.pad--xl--`: Adds a padding of **80px**
 
-### Actions
-The _suffixes_ that can be added to the padding class give you a lot of flexibility as to where and how padding will be applied. Unless you edit the corresponding _alias_ variable values, your options will be named the following:
+### Suffixes
+The _suffixes_ are the values you can append to the end of the _padding_ prefixes (i.e., `.pad--md--l`), to impact the padding of the element. Unless you edit the corresponding _alias_ variable values, your options will be named the following:
 
 - `t`: Adds padding to the **top**
 - `b`: Adds padding to the **bottom**
@@ -29,7 +28,7 @@ The _suffixes_ that can be added to the padding class give you a lot of flexibil
 ### Examples
 
 {% highlight html %}
-  <div class="pad--x--y pad--xl--x">
+  <div class="pad--0--y pad--xl--x">
     Will have no padding on the y-axis but 80px padding on the x-axis
   </div>
   <div class="pad--xs--t pad--md--r">
@@ -44,7 +43,8 @@ The _suffixes_ that can be added to the padding class give you a lot of flexibil
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
 {% highlight scss %}
-  //Padding Variables
+  // Padding Variables
+  $base-space: 1em;
   $include-padding: true;
   $padding-params: (
     0: 0,
