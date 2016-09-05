@@ -4,20 +4,17 @@ layout: default
 
 ## A Customizable Front End Utility Library for Developers
 
-**Custility** makes front end development of both small and large apps much easier with its powerful set of utility classes.
+**Custility** is a powerful set of _truly_ customizable css utility classes, made to greatly aid in the development of potentially large and ambitious websites and apps that need a mountain of flexibility. Every class name and breakpoint can be bent to your will, allowing you to even configure it to your current project's naming guidelines. These were initially built up by Kris Van Houten, but feel free to contribute!
 
-This isn't Bootstrap that, while a great tool, will make your website look like millions of others. Rather, this toolbox gives you the freedom to design your product the way you want, while kindly offering you a set of tools to help you make it great.
+This library does not focus on visual things like _buttons_, _form inputs_, _tables_, _typography_, and things of the like, but serves more as a toolbox for your website or app. I am currently working on a separate library that does handle the visual portion, but that will take more time to build.
 
-## Modules
-Here's some of the modules that **Custility** offers:
+### Get Started
+Custilty has several quick start options available:
 
-- [Flexbox Grid](#flexbox-grid)
-- [Display](#display)
-- [Margin](#margin)
-- [Padding](#padding)
-- [Position](#position)
-- [Pull](#pull)
-- [Text](#text)
+- [Download the latest release](https://github.com/krivaten/custility/archive/master.zip).
+- Clone the repo: `git clone https://github.com/krivaten/custility.git`.
+- Install with [Bower](http://bower.io): `bower install custility`.
+- Install with [npm](https://www.npmjs.com): `npm install custility`.
 
 ### Take only what you need to survive
 
@@ -29,13 +26,16 @@ Provide your own responsive break points or turn them off entirely on a per modu
 ### Bro, do you even BEM?
 **Custility** was made with BEM in mind, but if you haven't jumped on the train yet, we got you covered. Simply change the value of variable name `$spacer` to `'-'` and you'll feel right at home. Promise.
 
-### Get Started
-Custilty has several quick start options available:
+## Modules
+Here's some of the modules that **Custility** offers:
 
-- [Download the latest release](https://github.com/krivaten/custility/archive/master.zip).
-- Clone the repo: `git clone https://github.com/krivaten/custility.git`.
-- Install with [Bower](http://bower.io): `bower install custility`.
-- Install with [npm](https://www.npmjs.com): `npm install custility`.
+- [Flexbox Grid](#flexbox-grid)
+- [Display](#display)
+- [Margin](#margin)
+- [Padding](#padding)
+- [Position](#position)
+- [Pull](#pull)
+- [Text](#text)
 
 ---
 {% include sections/flexbox-grid.md %}
