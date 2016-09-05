@@ -33,8 +33,6 @@ Here's some of the modules that **Custility** offers:
 - [Pull](#pull)
 - [Text](#text)
 
----
-
 ## Flexbox grid
 
 [(back to top)](#top)
@@ -86,7 +84,7 @@ The _suffixes_ are the values you can append to the end of the _row_ and _column
 
 ### Examples
 
-{% highlight html %}
+```
   <div class="row row--md--sb">
     <div class="col--xs--6 col--md--4">
       Will only be four columns wide on screens 769px wide and greater
@@ -98,12 +96,12 @@ The _suffixes_ are the values you can append to the end of the _row_ and _column
       Will be full width and displayed first on screens 769px wide and larger
     </div>
   </div>
-{% endhighlight %}
+```
 
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-{% highlight scss %}
+```
   // Grid Variables
   $include-offset-columns: true;
   $include-responsive-grid: true;
@@ -133,9 +131,7 @@ The following are the variables that are used, along with their default values, 
   $nowrap-alias: nw;
   $stretch-alias: str;
   $offset-alias: o;
-{% endhighlight %}
-
----
+```
 
 ## Display
 
@@ -164,7 +160,7 @@ The _suffixes_ are the values you can append to the end of the _display_ prefixe
 
 ### Examples
 
-{% highlight html %}
+```
   <div class="dsp--xs--none dsp--xl--blk">
     Will only be visible on screens 1200px wide and greater
   </div>
@@ -174,12 +170,12 @@ The _suffixes_ are the values you can append to the end of the _display_ prefixe
   <div class="dsp--xs--sb">
     Will use flexbox's `space-between` feature on all screen sizes
   </div>
-{% endhighlight %}
+```
 
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-{% highlight scss %}
+```
   // Display Variables
   $include-responsive-display: true;
   $display-params: $screen-params;
@@ -191,9 +187,7 @@ The following are the variables that are used, along with their default values, 
   $none-alias: none;
   $space-between-alias: sb;
   $space-around-alias: sa;
-{% endhighlight %}
-
----
+```
 
 ## Margin
 
@@ -223,7 +217,7 @@ The _suffixes_ that can be added to the margin class give you a lot of flexibili
 
 ### Examples
 
-{% highlight html %}
+```
   <div class="mar--x--y mar--xl--x">
     Will have no margin on the y-axis but xl margin on the x-axis
   </div>
@@ -233,12 +227,12 @@ The _suffixes_ that can be added to the margin class give you a lot of flexibili
   <div class="mar--lg--b">
     Will have lg margin on the bottom
   </div>
-{% endhighlight %}
+```
 
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-{% highlight scss %}
+```
   //Margin Variables
   $include-margin: true;
   $margin-params: (
@@ -259,9 +253,7 @@ The following are the variables that are used, along with their default values, 
   $center-alias: c;
   $vertical-alias: y;
   $horizontal-alias: x;
-{% endhighlight %}
-
----
+```
 
 ## Padding
 
@@ -291,7 +283,7 @@ The _suffixes_ are the values you can append to the end of the _padding_ prefixe
 
 ### Examples
 
-{% highlight html %}
+```
   <div class="pad--0--y pad--xl--x">
     Will have no padding on the y-axis but 80px padding on the x-axis
   </div>
@@ -301,12 +293,12 @@ The _suffixes_ are the values you can append to the end of the _padding_ prefixe
   <div class="pad--lg--b">
     Will have 64px padding on the bottom
   </div>
-{% endhighlight %}
+```
 
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-{% highlight scss %}
+```
   // Padding Variables
   $base-space: 1em;
   $include-padding: true;
@@ -328,9 +320,7 @@ The following are the variables that are used, along with their default values, 
   $center-alias: c;
   $vertical-alias: y;
   $horizontal-alias: x;
-{% endhighlight %}
-
----
+```
 
 ## Position
 
@@ -363,7 +353,7 @@ The _suffixes_ are the values you can append to the end of the _position_ prefix
 
 ### Examples
 
-{% highlight html %}
+```
   <div class="pos--xl--abs pos--xl--tl">
     Will positioned in the top left on screens 1200px wide and greater
   </div>
@@ -373,12 +363,12 @@ The _suffixes_ are the values you can append to the end of the _position_ prefix
   <div class="pos--xs--abs pos--xs--br">
     Will be absolutely positioned to the bottom right on all screens
   </div>
-{% endhighlight %}
+```
 
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-{% highlight scss %}
+```
   // Position Variables
   $include-responsive-position: true;
   $position-params: $screen-params;
@@ -391,9 +381,7 @@ The following are the variables that are used, along with their default values, 
   $right-alias: r;
   $top-alias: t;
   $bottom-alias: b;
-{% endhighlight %}
-
----
+```
 
 ## Pull
 
@@ -419,18 +407,18 @@ The _suffixes_ are the values you can append to the end of the _pull_ prefixes (
 
 ### Examples
 
-{% highlight html %}
+```
   <div class="pull--xl--r">
     Will only be floated right on screens 1200px wide and greater
   </div>
   <div class="pull--xs--l pull--xl--none">
     Will be floated left up to 1200px, from there it will have no float
   </div>
-{% endhighlight %}
+```
 
 ### Variables
 
-{% highlight scss %}
+```
   // Pull Variables
   $include-responsive-pull: true;
   $pull-params: $screen-params;
@@ -440,9 +428,7 @@ The _suffixes_ are the values you can append to the end of the _pull_ prefixes (
   $left-alias: l;   
   $right-alias: r;
   $none-alias: none;
-{% endhighlight %}
-
----
+```
 
 ## Text
 
@@ -472,7 +458,7 @@ The _suffixes_ are the values you can append to the end of the _text_ prefixes (
 
 ### Examples
 
-{% highlight html %}
+```
   <div class="txt--xs--emp txt--xl--eli">
     Text will be italic on all screens and have an ellipsis on screens larger than 1200px
   </div>
@@ -482,12 +468,12 @@ The _suffixes_ are the values you can append to the end of the _text_ prefixes (
   <div class="txt--xs--sm">
     Text will be small on all screens
   </div>
-{% endhighlight %}
+```
 
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-{% highlight scss %}
+```
   // Text Variables
   $include-responsive-text: true;
   $text-params: $screen-params;
@@ -502,9 +488,7 @@ The following are the variables that are used, along with their default values, 
   $left-alias: l;
   $right-alias: r;
   $center-alias: c;
-{% endhighlight %}
-
----
+```
 
 ## Creator
 
