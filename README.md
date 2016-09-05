@@ -84,7 +84,7 @@ The _suffixes_ are the values you can append to the end of the _row_ and _column
 
 ### Examples
 
-```
+```html
   <div class="row row--md--sb">
     <div class="col--xs--6 col--md--4">
       Will only be four columns wide on screens 769px wide and greater
@@ -101,7 +101,7 @@ The _suffixes_ are the values you can append to the end of the _row_ and _column
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-```
+```scss
   // Grid Variables
   $include-offset-columns: true;
   $include-responsive-grid: true;
@@ -160,7 +160,7 @@ The _suffixes_ are the values you can append to the end of the _display_ prefixe
 
 ### Examples
 
-```
+```html
   <div class="dsp--xs--none dsp--xl--blk">
     Will only be visible on screens 1200px wide and greater
   </div>
@@ -175,7 +175,7 @@ The _suffixes_ are the values you can append to the end of the _display_ prefixe
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-```
+```scss
   // Display Variables
   $include-responsive-display: true;
   $display-params: $screen-params;
@@ -217,7 +217,7 @@ The _suffixes_ that can be added to the margin class give you a lot of flexibili
 
 ### Examples
 
-```
+```html
   <div class="mar--x--y mar--xl--x">
     Will have no margin on the y-axis but xl margin on the x-axis
   </div>
@@ -232,7 +232,7 @@ The _suffixes_ that can be added to the margin class give you a lot of flexibili
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-```
+```scss
   //Margin Variables
   $include-margin: true;
   $margin-params: (
@@ -283,7 +283,7 @@ The _suffixes_ are the values you can append to the end of the _padding_ prefixe
 
 ### Examples
 
-```
+```html
   <div class="pad--0--y pad--xl--x">
     Will have no padding on the y-axis but 80px padding on the x-axis
   </div>
@@ -298,7 +298,7 @@ The _suffixes_ are the values you can append to the end of the _padding_ prefixe
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-```
+```scss
   // Padding Variables
   $base-space: 1em;
   $include-padding: true;
@@ -353,7 +353,7 @@ The _suffixes_ are the values you can append to the end of the _position_ prefix
 
 ### Examples
 
-```
+```html
   <div class="pos--xl--abs pos--xl--tl">
     Will positioned in the top left on screens 1200px wide and greater
   </div>
@@ -368,7 +368,7 @@ The _suffixes_ are the values you can append to the end of the _position_ prefix
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-```
+```scss
   // Position Variables
   $include-responsive-position: true;
   $position-params: $screen-params;
@@ -407,7 +407,7 @@ The _suffixes_ are the values you can append to the end of the _pull_ prefixes (
 
 ### Examples
 
-```
+```html
   <div class="pull--xl--r">
     Will only be floated right on screens 1200px wide and greater
   </div>
@@ -418,7 +418,7 @@ The _suffixes_ are the values you can append to the end of the _pull_ prefixes (
 
 ### Variables
 
-```
+```scss
   // Pull Variables
   $include-responsive-pull: true;
   $pull-params: $screen-params;
@@ -458,7 +458,7 @@ The _suffixes_ are the values you can append to the end of the _text_ prefixes (
 
 ### Examples
 
-```
+```html
   <div class="txt--xs--emp txt--xl--eli">
     Text will be italic on all screens and have an ellipsis on screens larger than 1200px
   </div>
@@ -473,7 +473,7 @@ The _suffixes_ are the values you can append to the end of the _text_ prefixes (
 ### Variables
 The following are the variables that are used, along with their default values, which may be modified to your liking.
 
-```
+```scss
   // Text Variables
   $include-responsive-text: true;
   $text-params: $screen-params;
