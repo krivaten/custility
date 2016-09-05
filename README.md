@@ -1,5 +1,8 @@
 ## Custility
 
+![Custility Logo](https://raw.githubusercontent.com/krivaten/custility/master/docs/img/logo.png "Custility")
+
+
 **Custility** is a powerful set of _truly_ customizable css utility classes, made to greatly aid in the development of potentially large and ambitious websites and apps that need a mountain of flexibility. Every class name and breakpoint can be bent to your will, allowing you to even configure it to your current project's naming guidelines. These were initially built up by Kris Van Houten, but feel free to contribute!
 
 This library does not focus on visual things like _buttons_, _form inputs_, _tables_, _typography_, and things of the like, but serves more as a toolbox for your website or app. I am currently working on a separate library that does handle the visual portion, but that will take more time to build.
