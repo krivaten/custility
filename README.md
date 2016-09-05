@@ -23,7 +23,7 @@ Provide your own responsive break points or turn them off entirely on a per modu
 **Custility** was made with BEM in mind, but if you haven't jumped on the train yet, we got you covered. Simply change the value of variable name `$spacer` to `'-'` and you'll feel right at home. Promise.
 
 ## Modules
-Here's some of the modules that **Custility** offers:
+Here's the of the modules that **Custility** currently offers:
 
 - [Flexbox Grid](#flexbox-grid)
 - [Display](#display)
@@ -137,7 +137,7 @@ The following are the variables that are used, along with their default values, 
 
 [(back to top)](#top)
 
-These utilities allow you to control the _display_ of elements, and are very simple to use.
+These utilities allow you to control the _display_ of elements.
 
 ### Prefixes
 By default, responsive breakpoint based class names are generated for you. If you would like to generate non-responsive breakpoint class names, set the variable `$include-responsive-display` to `false`. If you do this, the only display prefix will be `.dsp--`, otherwise you will have the following:
@@ -193,7 +193,7 @@ The following are the variables that are used, along with their default values, 
 
 [(back to top)](#top)
 
-Within **Custility**, you can have consistent control over the margin you add to elements.
+These utilities allow you to control the _margin_ of elements.
 
 ### Prefixes
 By default, there are six margin prefixes that determine the size of the margin to be added. While the names and sizes can be changed by overriding the `$margin-params` variable, out of the box they are the the following:
@@ -259,7 +259,7 @@ The following are the variables that are used, along with their default values, 
 
 [(back to top)](#top)
 
-These utilities allow you to control the _padding_ of elements, and are very simple to use.
+These utilities allow you to control the _padding_ of elements.
 
 ### Prefixes
 By default, there are six padding prefixes that determine the size of the padding to be added. While the names and sizes can be changed by overriding the `$padding-params` variable, out of the box they are the the following:
@@ -387,7 +387,7 @@ The following are the variables that are used, along with their default values, 
 
 [(back to top)](#top)
 
-These utilities allow you to controll the _float_ of elements. A pretty small but still useful module.
+These utilities allow you to controll the _float_ of elements.
 
 ### Prefixes
 By default, responsive breakpoint based class names are generated for you. If you would like to generate non-responsive breakpoint class names, set the variable `$include-responsive-pull` to `false`. If you do this, the only pull prefix will be `.pull--`, otherwise you will have the following:
