@@ -16,7 +16,7 @@ Custilty has several quick start options available:
 
 I've done my best to make it so that adding **Custility** to your project doesn't add any unnecessary size to your compiled files. If there is a particular module you don't need, then don't include it in your build. Additionally, all the mixins required for each module are isolated to help ensure my code doesn't interfere with yours.
 
-### Bend it to your will
+### Bend it like Beckham
 Provide your own responsive break points or turn them off entirely on a per module basis, customize class names, and change the value of any computed value.
 
 ### Bro, do you even BEM?
